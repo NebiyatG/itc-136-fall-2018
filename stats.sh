@@ -10,8 +10,8 @@ connections=$( netstat | grep tcp )
 
 users=$( who )
 
-echo "This is a snapshot of your current system:
-      Disk Used: $diskused
+echo -en "This is a snapshot of your current system:
+ \e[105mLight     Disk Used: $diskused
       Free Memory: $memfree
       Logged in Users: $users
  Open Internet Connections:
